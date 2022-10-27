@@ -19,7 +19,7 @@ Java, JavaScript 학습 및 연애 시뮬레이션 게임
 - https://typecast.ai/kr
 ### 사운드
 - https://soundeffect-lab.info
-- https://www.mewpot.com
+- https://www.free-stock-music.com
 - https://mixkit.co/free-sound-effects
 ### 이미지
 - https://loudeyes.itch.io/dating-sim-ui-pack
