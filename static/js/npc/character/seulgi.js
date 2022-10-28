@@ -29,7 +29,7 @@ class Seulgi extends BaseLoveNpc {
       inPark1: "/static/image/npc/seulgi/seulgi-in-park-1.png",
       inPark2: "/static/image/npc/seulgi/seulgi-in-park-2.png",
       inPark3: "/static/image/npc/seulgi/seulgi-in-park-3.png",
-      inPark4: "/static/image/npc/seulgi/seulgi-in-park-3.png", // 시연용
+      inPark4: "/static/image/npc/seulgi/seulgi-in-park-3-newlec.png", // 시연용
     };
     this.#img = new Image();
     this.#img.src = this.#faces.default;

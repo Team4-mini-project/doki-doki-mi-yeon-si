@@ -139,8 +139,8 @@ class StoryHandler {
       // day 04
       [d04_ch01, d04_ch_all, d04_ch_bad, d04_ch_seulgi, d04_ch_yujin],
     ];
-    this.#currentDaysIndex = 0; // #days의 y축
-    this.#currentChapter = this.#days[0][0]; // 현재 d,ch index
+    this.#currentDaysIndex = 3; // #days의 y축
+    this.#currentChapter = this.#days[3][0]; // 현재 d,ch index
     this.onBranchUpdate = null;
   }
 

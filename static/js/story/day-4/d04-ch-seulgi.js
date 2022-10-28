@@ -71,7 +71,7 @@ export const d04_ch_seulgi = new ChapterBuilder()
   .addTextScene("슬기", "있잖아 주성아")
   .addTextScene("나", "응?")
   .addSceneWithEvents([
-    StoryEvent.drawSceneImage(seulgi.sceneFaces.inPark3),
+    StoryEvent.drawSceneImage(seulgi.sceneFaces.inPark4),
     TextEvent.hide(),
   ])
   .addSceneWithEvents([

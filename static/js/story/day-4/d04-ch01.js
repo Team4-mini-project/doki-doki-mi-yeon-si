@@ -19,6 +19,7 @@ export const d04_ch01 = new ChapterBuilder()
   ])
   .addTextScene(null, "오늘은 공강이다. 오늘 일정이 그러니까...")
   .addBranch(() => {
+    return "d04-ch-seulgi";
     // 둘 다 5일때
     if (seulgi.lovePoint === 5 && yujin.lovePoint === 5) return "d04-ch-all";
     // 슬기만 5일때
