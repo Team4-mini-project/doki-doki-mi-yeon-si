@@ -1,0 +1,461 @@
+@font-face {
+  /* 애플산돌고딕 폰트 적용 */
+  font-family: "SDGothic";
+  src: url("BMJUA_ttf.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  font-family: "SDGothic", serif;
+  color: rgb(8, 8, 8);
+}
+:root {
+  --backblack: rgba(207, 154, 200, 0.25);
+  --backblackheavy: rgba(236, 185, 185, 0.4);
+}
+body {
+  padding-bottom: 3.25em;
+}
+
+.logo {
+  text-align: center;
+  padding: 32px;
+}
+.logo a {
+  text-decoration: none;
+}
+
+/* this stuff is the background */
+.container {
+  height: 100%;
+  width: auto;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.container div {
+  position: absolute;
+  border-radius: 50%;
+  animation: gradient 4s infinite;
+}
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+.container div:nth-child(1) {
+  height: 80%;
+  width: 80%;
+  background-color: #c1cf80;
+  left: -10%;
+  top: -30%;
+}
+.container div:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  background-color: #da99d0;
+  top: -30%;
+  right: -40%;
+  animation-delay: 2s;
+}
+.container div:nth-child(5) {
+  height: 70%;
+  width: 80%;
+  background-color: #d3c99d;
+  bottom: -15%;
+  right: -20%;
+  animation-delay: 0.3s;
+}
+.container div:nth-child(4) {
+  height: 60%;
+  width: 62%;
+  background-color: #e27575;
+  bottom: -20%;
+  left: -12%;
+  animation-delay: 1.2s;
+}
+.container div:nth-child(3) {
+  height: 80%;
+  width: 70%;
+  background-color: #b8cf82;
+  top: 10%;
+  left: -15%;
+  animation-delay: 1.5s;
+}
+.container:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(150px);
+}
+
+/* Navigation Header */
+.nav-items {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.nav-items li {
+  display: inline-block;
+  padding: 0px 4vw;
+  font-size: 1.5em;
+}
+.nav-items li a {
+  text-decoration: none;
+}
+.nav-items li a:hover {
+  text-shadow: 2px 2px 5px rgb(225, 0, 255);
+}
+.nav-items li a:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+#active {
+  /* which page you are actually on will be lit in green */
+  color: rgb(225, 0, 255);
+}
+
+/* footer */
+.mis-foot {
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  padding-top: 16px;
+}
+.mis-foot a {
+  padding-left: 8px;
+  bottom: 0em;
+}
+#github {
+  padding-left: 4px;
+}
+
+/* Home Page / index.html */
+.home-container {
+  /* the container */
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 17em;
+}
+.home-container img {
+  /* roguePG image */
+  width: 100%;
+  height: auto;
+}
+.top {
+  position: absolute;
+  top: 0%;
+  /* background-color: var(--backblackheavy); */
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+}
+.middle {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  font-size: 1.5em;
+}
+.middle a {
+  text-decoration: none;
+  background-color: var(--backblack);
+}
+.middle a:hover {
+  color: rgb(209, 154, 214);
+}
+.middle a:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+#active {
+  /* which page you are actually on will be lit in green */
+  color: rgb(225, 0, 255);
+}
+
+.middleleft {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  font-size: 1.25em;
+}
+.middleleft a {
+  text-decoration: none;
+}
+.middleleft a:hover {
+  text-shadow: 2px 2px 5px rgb(225, 0, 255);
+}
+.middleleft a:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+#active {
+  /* which page you are actually on will be lit in green */
+  color: rgb(225, 0, 255);
+}
+
+.middleright {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  font-size: 1.25em;
+}
+.middleright a {
+  text-decoration: none;
+}
+.middleright a:hover {
+  text-shadow: 2px 2px 5px rgb(225, 0, 255);
+}
+.middleright a:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+
+.bottomleft {
+  position: fixed;
+  height: 70%;
+  width: auto;
+  margin: auto;
+  bottom: 0.5em;
+  left: 0.5em;
+  /* background-color: var(--backblack); */
+  font-size: 1.25em;
+  padding: 1% 10%;
+}
+.bottomleft a {
+  text-decoration: none;
+}
+.bottomleft:hover {
+  text-shadow: 2px 2px 5px rgb(225, 0, 255);
+}
+.bottomleft:active {
+  color: rgb(225, 0, 255);
+}
+.bottomleft a:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+.bottomleft a:hover img {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+.bottomleft a:not(:hover) img {
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+
+.bottomright {
+  /* price */
+  position: fixed;
+  height: 70%;
+  width: auto;
+  margin: auto;
+  bottom: 0.5em;
+  right: 0.5em;
+  /* background-color: var(--backblack); */
+  font-size: 1.25em;
+  padding: 1% 10%;
+}
+.bottomright a {
+  text-decoration: none;
+}
+.bottomright:hover {
+  text-shadow: 2px 2px 5px rgb(225, 0, 255);
+}
+.bottomright:active {
+  color: rgb(225, 0, 255);
+}
+.bottomright a:hover img {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+.bottomright a:not(:hover) img {
+  transform: scale(1);
+  transition: all 0.2s linear;
+}
+.bottomright img:active {
+  /* the link you click will flash green for a moment before loading */
+  color: rgb(225, 0, 255);
+}
+/* Shop / Store page */
+.left-grid-container {
+  display: inline-grid;
+  margin-left: 10%;
+  width: 48%;
+  padding-bottom: 20px;
+}
+.right-grid-container {
+  float: right;
+  margin-right: 10%;
+  width: 30%;
+  padding-bottom: 100px;
+}
+
+.rpg-item {
+  /* featured container */
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+.rpg-item img {
+  /* roguepg image */
+  width: 100%;
+  height: auto;
+}
+.subheading {
+  /* used for the subtitles Reviews and System Requirements on Store page */
+  background-color: var(--backblackheavy);
+  margin-top: 0.75em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+  text-align: center;
+}
+.description {
+  background-color: var(--backblackheavy);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.25em;
+  text-align: center;
+}
+.game-description {
+  background-color: var(--backblackheavy);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 1.5em;
+  text-align: center;
+}
+.game-description img {
+  width: 70%;
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.game-description ul {
+  text-align: start;
+  padding-left: 20%;
+}
+
+.left-item {
+  background-color: HSLA(0, 0%, 0%, 0.1);
+}
+.left-item h1 {
+  font: 1.25em "Outfit", sans-serif;
+  margin-left: 0.8em;
+}
+.left-item small {
+  font: 0.625em "Outfit", sans-serif;
+  font-weight: 100;
+  float: right;
+  margin-top: -2.75em;
+  margin-right: 2.4em;
+}
+.left-item p {
+  font: 0.75em "Outfit", sans-serif;
+  font-weight: 300;
+  margin: 0em 2em;
+}
+.left-item:nth-child(7) {
+  padding-bottom: 20px;
+}
+
+.right-item p {
+  font: 1em "Outfit", sans-serif;
+  font-weight: 300;
+  margin: 0.75em 1em;
+}
+.greentxt {
+  font: 1em "Outfit", sans-serif;
+  color: HSLA(130, 100%, 50%, 1);
+  margin-left: 1em;
+  margin-bottom: -0.75em;
+}
+
+/* About Character page */
+.mis-character img {
+  width: 35%;
+  float: left;
+  padding-right: 80px;
+}
+.am-character {
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+
+/* Blog page */
+.embed-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: 610px;
+  overflow-y: auto;
+  padding-bottom: 16px;
+  border-radius: 15px;
+}
+
+/* About Us page */
+.about-container {
+  margin: 50px 20% 38vh 20%;
+}
+.subheader-us {
+  font: 32px;
+  text-align: center;
+}
+.mis-pic {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+}
+.mis-pic img {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+}
+.mis-developer {
+  font: 32px "Outfit", sans-serif;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.bio {
+  font: 16px "Outfit", sans-serif;
+  font-weight: 300;
+}
+.rule {
+  font: 16px "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+/* Contact Us page */
+.info {
+  margin: 10%;
+}
+.info p {
+  padding: 16px;
+  font: 32px "Outfit", sans-serif;
+  text-align: center;
+}
