@@ -22,7 +22,7 @@ export const d03_ch09 = new ChapterBuilder()
     BackgroundEvent.changeTo(BACKGROUND_NAMES.MY_ROOM_NIGHT),
   ])
   .addSceneWithEvents([
-    TextEvent.to(null, ["까톡!!"]),
+    TextEvent.to(null, ["뉴렉톡!!"]),
     // 카톡 사운드 추가
   ])
   .addTextScene("나", "이 시간에 누구지...?")
