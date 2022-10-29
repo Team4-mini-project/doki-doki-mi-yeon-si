@@ -22,6 +22,7 @@ Java 학습 및 연애 시뮬레이션 게임
 - https://www.free-stock-music.com
 - https://mixkit.co/free-sound-effects
 ### 이미지
+- https://wataokiba.net/
 - https://loudeyes.itch.io/dating-sim-ui-pack
 - https://www.ac-illust.com
 - https://www.freepik.com/free-vector/cartoon-element-animation-frames_13818851.htm#query=sprite%20sheets&position=24&from_view=search&track=sph
