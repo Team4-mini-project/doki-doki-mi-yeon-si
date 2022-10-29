@@ -7,6 +7,8 @@ import { NPC_NAMES } from "../../npc/npc-handler.js";
 import { BACKGROUND_NAMES } from "../../background/const/background-names.js";
 import { StoryEvent } from "../event/story-event.js";
 import { EndEvent } from "../../global/event/end-event.js";
+import { SoundEvent } from "../../sound/event/sound-event.js";
+import { BGM_NAMES } from "../../sound/const/bgm-names.js";
 
 /**
  * 슬기 엔딩
@@ -15,7 +17,10 @@ export const d04_ch_seulgi = new ChapterBuilder()
   .setDaysNum(4)
   .setChapterName("d04-ch-seulgi")
   .setNextChapterName(null)
-  .addTextScene("나", "슬기랑 데이트 하는날! 으흐흐")
+  .addSceneWithEvents([
+    SoundEvent.playBgm(BGM_NAMES.ENDING),
+    TextEvent.to("나", "슬기랑 데이트 하는날! 으흐흐"),
+  ])
   .addTextScene(null, "어제 자기전에 슬기에게 뉴렉톡이 왔었다!!")
   .addTextScene(null, "바로 저번에 얘기한 뉴렉월드를 같이 가자는 것!")
   .addTextScene("나", "여자랑 첫 뉴렉월드라니.. 멋있게 하고 가야딩")

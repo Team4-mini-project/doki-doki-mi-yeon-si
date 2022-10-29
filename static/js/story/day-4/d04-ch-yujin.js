@@ -4,6 +4,8 @@ import { EndEvent } from "../../global/event/end-event.js";
 import { yujin } from "../../npc/character/yujin.js";
 import { NpcEvent } from "../../npc/event/npc-event.js";
 import { NPC_NAMES } from "../../npc/npc-handler.js";
+import { BGM_NAMES } from "../../sound/const/bgm-names.js";
+import { SoundEvent } from "../../sound/event/sound-event.js";
 import { TextEvent } from "../../text/event/text-event.js";
 import { ChapterBuilder } from "../chapter-builder.js";
 import { StoryEvent } from "../event/story-event.js";
@@ -15,7 +17,10 @@ export const d04_ch_yujin = new ChapterBuilder()
   .setDaysNum(1)
   .setChapterName("d04-ch-yujin")
   .setNextChapterName(null)
-  .addTextScene("나", "유진이랑 데이트 하는날! 으흐흐")
+  .addSceneWithEvents([
+    SoundEvent.playBgm(BGM_NAMES.ENDING),
+    TextEvent.to("나", "유진이랑 데이트 하는날! 으흐흐"),
+  ])
   .addTextScene(null, "어제 자기전에 유진이한테서 뉴렉톡이 왔었다!!")
   .addTextScene(null, "뉴렉 타워에서 저녁을 먹자는 것!!")
   .addTextScene("나", "여자랑 첫 뉴렉 타워라니.. 멋있게 하고 가야딩")
